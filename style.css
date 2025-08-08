@@ -1,0 +1,47 @@
+
+/* Estilo da grade 12x12 */
+
+.grade {
+	display: grid;
+	grid-template-columns: repeat(12, 56px);
+	grid-template-rows: repeat(12, 56px);
+	gap: 4px;
+	margin: 60px auto;
+	width: max-content;
+}
+
+/* Estilo das células */
+.celula {
+	width: 56px;
+	height: 56px;
+	border: 1.5px solid #ccc;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	font-size: 1.2rem;
+}
+
+
+.pedra {
+	background: #888;
+	border: 2px solid #555;
+	background-image: url('Tiles/tile_0077.png');
+	background-size: cover;
+	background-position: center;
+}
+
+
+.erva {
+	background: #4caf50;
+	border: 2px dashed #2e7d32;
+	background-image: url('Tiles/tile_0007.png');
+	background-size: cover;
+	background-position: center;
+}
+
+
+.vazio {
+	background: #fff;
+	background-image: url('Tiles/tile_0025.png');
+	background-size: cover;
+	background-position: center;
+}
