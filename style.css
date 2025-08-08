@@ -1,3 +1,34 @@
+/* Solo preparado */
+.preparado {
+	background: #b8860b;
+	border: 2px solid #8b5c00;
+	background-image: url('Tiles/tile_0001.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+/* Plantio das sementes */
+.plantado-cenoura {
+	background: #ff9800 !important;
+	border: 2px solid #b36b00 !important;
+	background-image: url('Tiles/tile_0002.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.plantado-tomate {
+	background: red !important;
+	border: 2px solid #a31515 !important;
+	background-image: url('Tiles/tile_0003.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.plantado-alface {
+	background: #81c784 !important;
+	border: 2px solid #388e3c !important;
+	background-image: url('Tiles/tile_0004.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
 
 /* Estilo da grade 12x12 */
 
@@ -31,7 +62,7 @@
 
 
 .erva {
-	background: #4caf50;
+	background: #4cac4f;
 	border: 2px dashed #2e7d32;
 	background-image: url('Tiles/tile_0007.png');
 	background-size: cover;
@@ -40,7 +71,7 @@
 
 
 .vazio {
-	background: #fff;
+	
 	background-image: url('Tiles/tile_0025.png');
 	background-size: cover;
 	background-position: center;
