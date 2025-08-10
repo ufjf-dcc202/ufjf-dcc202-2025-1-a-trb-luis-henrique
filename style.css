@@ -78,6 +78,12 @@
 	font-size: 1.2rem;
 }
 
+/* Solo vazio */
+.vazio {
+	background: #f8f8f8 url('Tiles/tile_0025.png') center/cover no-repeat !important;
+	border: 1.5px solid #ccc !important;
+}
+
 /* Pedra */
 .pedra {
 	background: #888;
