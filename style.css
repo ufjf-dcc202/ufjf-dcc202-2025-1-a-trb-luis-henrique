@@ -1,3 +1,62 @@
+/* Terceira fase das plantações */
+.fase3-cenoura {
+	background: orange;
+	background-image: url('Tiles/tile_0005.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase3-tomate {
+	background: red;
+	background-image: url('Tiles/tile_0005.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase3-alface {
+	background: #4caf50;
+	background-image: url('Tiles/tile_0005.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+/* Estado morta */
+.morta {
+	background-image: url('Tiles/tile_0109.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+	opacity: 0.7;
+}
+/* Segunda fase das plantações */
+.fase2-cenoura {
+	background: orange;
+	background-image: url('Tiles/tile_0007.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase2-tomate {
+	background: red;
+	background-image: url('Tiles/tile_0007.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase2-alface {
+	background: #4caf50;
+	background-image: url('Tiles/tile_0007.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+/* Primeira fase das plantações */
+.fase1-cenoura {
+	background: orange url('Tiles/tile_0017.png') center/cover no-repeat !important;
+	border: 3px solid #ff9800 !important;
+}
+.fase1-tomate {
+	background: red url('Tiles/tile_0017.png') center/cover no-repeat !important;
+	border: 3px solid #d32f2f !important;
+}
+.fase1-alface {
+	background: #4caf50 url('Tiles/tile_0017.png') center/cover no-repeat !important;
+	border: 3px solid #388e3c !important;
+}
 
 /* Grade 12x12 */
 .grid {
@@ -15,7 +74,7 @@
 	height: 56px;
 	border: 1.5px solid #ccc;
 	box-sizing: border-box;
-	background: #f8f8f8;
+	background: #f8f8f8 url('Tiles/tile_0025.png') center/cover no-repeat;
 	font-size: 1.2rem;
 }
 
@@ -30,19 +89,22 @@
 
 /* Erva daninha */
 .erva {
-	background: #4cac4f;
-	border: 2px dashed #2e7d32;
-	background-image: url('Tiles/tile_0007.png');
-	background-size: cover;
-	background-position: center;
-}
+	background: #4cac4f url('Tiles/tile_0029.png') center/cover no-repeat;
+	}
 
-/* Vazio */
-.vazio {
-	background-image: url('Tiles/tile_0025.png');
-	background-size: cover;
-	background-position: center;
-}
+	/* Primeira fase das plantações */
+	.fase1-cenoura {
+		background: orange url('Tiles/tile_0002.png') center/cover no-repeat !important;
+		border: 3px solid #ff9800 !important;
+	}
+	.fase1-tomate {
+		background: red url('Tiles/tile_0002.png') center/cover no-repeat !important;
+		border: 3px solid #d32f2f !important;
+	}
+	.fase1-alface {
+		background: #4caf50 url('Tiles/tile_0002.png') center/cover no-repeat !important;
+		border: 3px solid #388e3c !important;
+	}
 
 /* Solo preparado */
 .preparado {
@@ -55,23 +117,11 @@
 
 /* Plantio das sementes */
 .plantado-cenoura {
-	background: #ff9800 !important;
 	border: 2px solid #b36b00 !important;
-	background-image: url('Tiles/tile_0002.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
 }
 .plantado-tomate {
-	background: red !important;
 	border: 2px solid #a31515 !important;
-	background-image: url('Tiles/tile_0003.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
 }
 .plantado-alface {
-	background: #81c784 !important;
 	border: 2px solid #388e3c !important;
-	background-image: url('Tiles/tile_0004.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
 }
