@@ -4,6 +4,38 @@
 	50% { border-width: 6px; opacity: 0.7; }
 	100% { border-width: 4px; opacity: 1; }
 }
+/* Primeira fase das plantações */
+.fase1-cenoura {
+	background: orange url('Tiles2/tile_0088.png') center/cover no-repeat !important;
+	border: 3px solid #ff9800 !important;
+}
+.fase1-tomate {
+	background: red url('Tiles2/tile_0088.png') center/cover no-repeat !important;
+	border: 3px solid #d32f2f !important;
+}
+.fase1-alface {
+	background: #4caf50 url('Tiles2/tile_0088.png') center/cover no-repeat !important;
+	border: 3px solid #388e3c !important;
+}
+/* Segunda fase das plantações */
+.fase2-cenoura {
+	background: orange;
+	background-image: url('Tiles2/tile_0089.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase2-tomate {
+	background: red;
+	background-image: url('Tiles2/tile_0089.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fase2-alface {
+	background: #4caf50;
+	background-image: url('Tiles2/tile_0089.png') !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
 
 /* Terceira fase das plantações */
 .fase3-cenoura {
@@ -24,6 +56,7 @@
 	background-size: cover !important;
 	background-position: center !important;
 }
+
 
 /* Indicador visual para plantas regadas */
 .regada {
@@ -57,39 +90,9 @@
 	opacity: 0.7;
 }
 
-/* Primeira fase das plantações */
-.fase1-cenoura {
-	background: orange url('Tiles2/tile_0088.png') center/cover no-repeat !important;
-	border: 3px solid #ff9800 !important;
-}
-.fase1-tomate {
-	background: red url('Tiles2/tile_0088.png') center/cover no-repeat !important;
-	border: 3px solid #d32f2f !important;
-}
-.fase1-alface {
-	background: #4caf50 url('Tiles2/tile_0088.png') center/cover no-repeat !important;
-	border: 3px solid #388e3c !important;
-}
 
-/* Segunda fase das plantações */
-.fase2-cenoura {
-	background: orange;
-	background-image: url('Tiles2/tile_0089.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
-}
-.fase2-tomate {
-	background: red;
-	background-image: url('Tiles2/tile_0089.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
-}
-.fase2-alface {
-	background: #4caf50;
-	background-image: url('Tiles2/tile_0089.png') !important;
-	background-size: cover !important;
-	background-position: center !important;
-}
+
+
 
 /* Grade 12x12 */
 .grid {
@@ -111,13 +114,13 @@
 	font-size: 1.2rem;
 }
 
-/* Solo vazio */
+/*vazio */
 .vazio {
 	background: #f8f8f8 url('Tiles2/tile_0034.png') center/cover no-repeat !important;
 	border: 1.5px solid #ccc !important;
 }
 
-/* Pedra */
+/* Pedra*/
 .pedra {
 	background: #888;
 	border: 2px solid #555;
@@ -126,12 +129,12 @@
 	background-position: center;
 }
 
-/* Erva daninha */
+/* Erva daninha*/
 .erva {
 	background: #4cac4f url('Tiles/tile_0029.png') center/cover no-repeat;
 }
 
-/* Solo preparado */
+/* Solo preparado*/
 .preparado {
 	background: #b8860b;
 	border: 2px solid #8b5c00;
@@ -140,7 +143,7 @@
 	background-position: center !important;
 }
 
-/* Plantio das sementes */
+/* Plantio das sementes*/
 .plantado-cenoura {
 	border: 3px solid #ff9800 !important;
 	box-shadow: 0 0 8px rgba(255, 152, 0, 0.5) !important;
@@ -154,9 +157,9 @@
 	box-shadow: 0 0 8px rgba(46, 125, 50, 0.7) !important;
 }
 
-/* Estilos da Interface */
+/* Estilos da Interface*/
 
-/* Container dos indicadores */
+
 #indicadores {
 	background: linear-gradient(135deg, #2c3e50, #34495e);
 	color: white;
@@ -177,7 +180,7 @@
 	border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* Estilo base dos botões da interface */
+/* Estilo dos botões da interface*/
 button:not(.tile) {
 	padding: 12px 20px;
 	border: none;
@@ -200,7 +203,7 @@ button:not(.tile):active {
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Botões de sementes */
+/* Botões de sementes*/
 #btn-cenoura {
 	background: linear-gradient(135deg, #ff9800, #f57c00);
 	color: white;
@@ -228,7 +231,7 @@ button:not(.tile):active {
 	background: linear-gradient(135deg, #43a047, #2e7d32);
 }
 
-/* Botões de ação */
+/* Botões de ação*/
 #btn-avancar {
 	background: linear-gradient(135deg, #2196f3, #1976d2);
 	color: white;
@@ -286,7 +289,7 @@ button:not(.tile):active {
 	color: #e1bee7;
 }
 
-/* Botões da loja */
+/* Botões da loja*/
 #comprar-cenoura, #comprar-tomate, #comprar-alface {
 	background: linear-gradient(135deg, #ffc107, #ff8f00);
 	color: #333;
@@ -299,7 +302,7 @@ button:not(.tile):active {
 	border-color: #ff6f00;
 }
 
-/* Centralizar botões principais */
+/* Centralizar botões principais*/
 body {
 	text-align: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -309,7 +312,7 @@ body {
 	padding: 20px;
 }
 
-/* Plantas prontas para colheita - Especificidade aumentada */
+/* Plantas prontas para colheita*/
 .tile.pronta-cenoura {
 	background-image: url('Tiles2/tile_0056.png') !important;
 	background-size: cover !important;

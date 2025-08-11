@@ -29,22 +29,22 @@ atualizarIndicadores();
 // Seleção de semente
 document.getElementById('btn-cenoura').addEventListener('click', function() {
 	sementeSelecionada = 'cenoura';
-	modoRegar = false; // Desativar modo regar ao selecionar semente
+	modoRegar = false; 
 	atualizarIndicadores();
 });
 document.getElementById('btn-tomate').addEventListener('click', function() {
 	sementeSelecionada = 'tomate';
-	modoRegar = false; // Desativar modo regar ao selecionar semente
+	modoRegar = false; 
 	atualizarIndicadores();
 });
 document.getElementById('btn-alface').addEventListener('click', function() {
 	sementeSelecionada = 'alface';
-	modoRegar = false; // Desativar modo regar ao selecionar semente
+	modoRegar = false; 
 	atualizarIndicadores();
 });
 
 
-// Estado das plantas: para cada célula, guarda fase, regada, turnos sem regar, tipo
+// Estado das plantas para cada célula
 
 let estadoPlantas = {};
 const maxFase = 3;
@@ -56,7 +56,7 @@ for (let i = 0; i < 12; i++) {
 		const celula = document.getElementById(`celula-${i}-${j}`);
 		if (!celula) continue;
 		celula.addEventListener('click', function() {
-			// Se modo regar estiver ativo, regar a planta diretamente
+			
 			if (modoRegar && (
 				celula.classList.contains('plantado-cenoura') ||
 				celula.classList.contains('plantado-tomate') ||
@@ -133,7 +133,7 @@ for (let i = 0; i < 12; i++) {
 			if (celula.classList.contains('pronta')) {
 				const estado = estadoPlantas[celula.id];
 				if (estado) {
-					// Ganhar dinheiro baseado no tipo de planta
+					// Ganhar dinheiro 
 					let valor = 0;
 					if (estado.tipo === 'cenoura') valor = 10;
 					else if (estado.tipo === 'tomate') valor = 15;
@@ -205,7 +205,7 @@ document.getElementById('btn-avancar').addEventListener('click', function() {
 					if (estado.tipo === 'tomate') celula.classList.add('fase3-tomate');
 					if (estado.tipo === 'alface') celula.classList.add('fase3-alface');
 				} else if (estado.fase > maxFase) {
-					// Adicionar classes específicas para plantas prontas
+					// Planta pronta
 					celula.classList.add('pronta');
 					if (estado.tipo === 'cenoura') celula.classList.add('pronta-cenoura');
 					else if (estado.tipo === 'tomate') celula.classList.add('pronta-tomate');
@@ -228,7 +228,7 @@ document.getElementById('btn-avancar').addEventListener('click', function() {
 	}
 });
 
-// Funcionalidades da loja
+// Funções da loja
 document.getElementById('comprar-cenoura').addEventListener('click', function() {
 	if (dinheiro >= 5) {
 		dinheiro -= 5;
