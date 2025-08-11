@@ -144,6 +144,7 @@ for (let i = 0; i < 12; i++) {
 					// Limpar célula - remover todas as classes de plantação
 					celula.classList.remove(
 						'pronta', 'selecionada', 'regada',
+						'pronta-cenoura', 'pronta-tomate', 'pronta-alface',
 						'plantado-cenoura', 'plantado-tomate', 'plantado-alface',
 						'fase1-cenoura', 'fase1-tomate', 'fase1-alface',
 						'fase2-cenoura', 'fase2-tomate', 'fase2-alface',
@@ -204,7 +205,11 @@ document.getElementById('btn-avancar').addEventListener('click', function() {
 					if (estado.tipo === 'tomate') celula.classList.add('fase3-tomate');
 					if (estado.tipo === 'alface') celula.classList.add('fase3-alface');
 				} else if (estado.fase > maxFase) {
+					// Adicionar classes específicas para plantas prontas
 					celula.classList.add('pronta');
+					if (estado.tipo === 'cenoura') celula.classList.add('pronta-cenoura');
+					else if (estado.tipo === 'tomate') celula.classList.add('pronta-tomate');
+					else if (estado.tipo === 'alface') celula.classList.add('pronta-alface');
 				}
 			} else {
 				estado.semAgua++;
@@ -287,6 +292,7 @@ document.getElementById('btn-colher-todas').addEventListener('click', function()
 				// Limpar célula - remover todas as classes de plantação
 				celula.classList.remove(
 					'pronta', 'selecionada', 'regada',
+					'pronta-cenoura', 'pronta-tomate', 'pronta-alface',
 					'plantado-cenoura', 'plantado-tomate', 'plantado-alface',
 					'fase1-cenoura', 'fase1-tomate', 'fase1-alface',
 					'fase2-cenoura', 'fase2-tomate', 'fase2-alface',
